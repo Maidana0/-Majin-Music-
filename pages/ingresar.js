@@ -4,6 +4,7 @@ import Image from 'next/image'
 import styles from '<@FMaidana07>/styles/Form.module.css'
 import { useState, useContext } from 'react'
 import { LogContext } from '<@FMaidana07>/components/context'
+import Link from 'next/link'
 
 export default function Home() {
   const { log, login, router } = useContext(LogContext)
@@ -51,13 +52,18 @@ export default function Home() {
           :
           <Container>
             <h2>Usted ya esta Logueado</h2>
-            <h3  className='sub-title'>{log}, esperamos que disfrute del sitio web!!</h3>
+            <h3 className='sub-title'>{log}, esperamos que disfrute del sitio web!!</h3>
             <Image
               src={'/images/kidboo.png'}
               width={130}
               height={349}
               alt={'Kid-Boo'}
             />
+            <Link
+              href={'/'}
+              className={styles.submit}>
+              Ir al Inicio
+            </Link>
 
           </Container>
       }

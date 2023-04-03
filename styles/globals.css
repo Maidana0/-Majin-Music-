@@ -67,16 +67,23 @@ nav {
   }
 }
 
+#nprogress .bar {
+  margin-top: 4rem;
+  background: yellow;
+  height: 5px;
+  border-radius: 100%;
+}
+#nprogress .spinner {
+  margin-top: 4rem;
+}
+#nprogress .spinner-icon {
+  width: 18px;
+  height: 18px;
+  border-top-color: yellow;
+  border-left-color: yellow;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
+#nprogress .peg {
+  box-shadow: 0 0 10px yellow, 0 0 5px yellow;
+}
