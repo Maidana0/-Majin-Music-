@@ -14,7 +14,7 @@ const Navbar = ({ subMenu, setSubMenu, router, styles, userLog }) => (
           priority
         />
         <Link href={userLog? '/' : '/ingresar'} >
-          <h2>[ Majin - Music ]</h2>
+          <h2>[Majin - Music]</h2>
         </Link>
       </div>
 
@@ -23,9 +23,9 @@ const Navbar = ({ subMenu, setSubMenu, router, styles, userLog }) => (
     <>
       <ul id='nav' className={`f_c ${styles.nav_items}`}>
         <li className={styles.nav_links}>
-          <Link href={''} role='button' scroll={false}
+          <Link href={''} type='button' scroll={false}
             className={`${styles.link} ${subMenu ? styles.sub_active : ''}`}
-            onClick={() => setSubMenu(!subMenu)}>
+            onClick={(e) =>{ e.preventDefault(); setSubMenu(!subMenu)}}>
             Categorias
           </Link>
           <ul className={`f_c ${styles.sub_menu} ${subMenu ? styles.category_on : styles.category_off}`}>

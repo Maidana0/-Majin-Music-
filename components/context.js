@@ -5,7 +5,6 @@ export const LogContext = createContext()
 
 const ContextProvider = ({ children }) => {
     const router = useRouter() // Link Active
-
     const [user, setUser] = useState(false)
     const [log, setLog] = useState(false)
 

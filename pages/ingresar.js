@@ -21,52 +21,53 @@ export default function Home() {
       <Head>
         <title>Ingresar [Majin-Music]</title>
       </Head>
-
-      {
-        !log ?
-          <Container>
-            <Image
-              src={'/images/waiting.webp'}
-              width={300}
-              height={250}
-              alt={'Majin-Boo...'}
-              priority
-            />
-            <form className={styles.form}
-              onSubmit={handleSubmit}>
-              <input
-                className={styles.input}
-                name='name'
-                onChange={(e) => setInputName(e.target.value)}
-                type='text'
-                autoComplete='off' required
-                maxLength={15}
-                placeholder='Ingrese su nombre' />
-              <input
-                className={styles.submit}
-                type='submit'
-                value='OK'
+        {
+          !log ?
+            <Container>
+              <Image
+                src={'/images/waiting.webp'}
+                width={300}
+                height={250}
+                alt={'Majin-Boo...'}
+                priority
               />
-            </form>
-          </Container>
-          :
-          <Container>
-            <h2>Usted ya esta Logueado</h2>
-            <h3 className='sub-title'>{log}, esperamos que disfrute del sitio web!!</h3>
-            <Image
-              src={'/images/kidboo.png'}
-              width={130}
-              height={349}
-              alt={'Kid-Boo'}
-            />
-            <Link
-              href={'/'}
-              className={styles.submit}>
-              Ir al Inicio
-            </Link>
+              <form className={styles.form}
+                onSubmit={handleSubmit}>
+                <input
+                  className={styles.input}
+                  name='name'
+                  onChange={(e) => setInputName(e.target.value)}
+                  type='text'
+                  autoComplete='off' required
+                  maxLength={15}
+                  placeholder='Ingrese su nombre' />
+                <input
+                  className={styles.submit}
+                  type='submit'
+                  value='OK'
+                />
+              </form>
+            </Container>
+            :
+            <Container>
+              <h2>Usted ya esta Logueado</h2>
+              <h3 className='sub-title'>{log}, esperamos que disfrute del sitio web!!</h3>
+              <Image
+                src={'/images/kidboo.png'}
+                width={130}
+                height={349}
+                alt={'Kid-Boo'}
+                priority
+              />
+              <Link
+                href={'/'}
+                className={styles.submit}>
+                Ir al Inicio
+              </Link>
 
-          </Container>
-      }
+            </Container>
+        }
+
 
     </>
   )
