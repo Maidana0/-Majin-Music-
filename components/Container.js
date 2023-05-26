@@ -1,4 +1,4 @@
-import styles from '<@FMaidana07>/styles/Container.module.css'
+import styles from '<@FMaidana07>/styles/Components.module.css'
 
 const Container = ({ children, className }) => {
   return (

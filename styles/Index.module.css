@@ -1,0 +1,45 @@
+
+.index{
+    width: 100%;
+    height: 90vh;
+    background: url('/images/kid-wallpaper.webp');
+    background-color: black;
+    background-position: center;
+    background-size: contain;    
+    background-repeat: no-repeat;
+    padding: 2rem;
+    z-index: 0;
+}
+.index h1{
+    font-family: 'Silkscreen', cursive;
+    text-align: center;
+    width: 60%;
+    padding: 3rem 1rem 2rem;
+}
+.index p{
+    font-size: 1.7rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    width: 50%;
+    padding: 1rem 4rem;
+    text-align: center;
+}
+
+@media (max-width: 785px) {
+    .index{
+        background-size:170%;    
+        background-position: 90%;
+
+    }
+    .index h1{
+        padding: 1rem .5rem 0;
+        width: 100%;
+    }   
+    .index p{
+        margin: 2rem auto 0;
+        width: 85%;
+        padding: 1rem;
+        background-color: rgba(0, 0, 0, 0.75);
+        border-radius: 20px;
+    } 
+}

@@ -1,16 +1,17 @@
 import Image from "next/image"
+import styles from '<@FMaidana07>/styles/Components.module.css'
 
 const Loading = () => {
   return (
-    <div>
-        
-        <Image 
+    <div className={styles.loading_container}>
+      <Image
         src={'/images/gifLoad.gif'}
-        width={350}
-        height={400}
+        width={280}
+        height={300}
         alt='Majin-Load'
         priority
-        />
+        className={styles.loading_gif}
+      />
     </div>
   )
 }

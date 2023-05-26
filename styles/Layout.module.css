@@ -248,6 +248,8 @@
   color: yellow;
   font-size: small;
   box-shadow: 0 -1px 12px 1px yellow;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 400;
 }
 
 .footer img {

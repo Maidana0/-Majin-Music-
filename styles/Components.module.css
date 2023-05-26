@@ -1,0 +1,48 @@
+.loading_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    width: min-content;
+    background-color: #000000be;
+    border: solid 1px yellow;
+    box-shadow: 0 0 50px 4px black;
+    border-radius: 100%;
+    margin: 8rem auto 0;
+
+    -webkit-animation:fade-in .5s cubic-bezier(.39,.575,.565,1.000) both;animation:fade-in .5s cubic-bezier(.39,.575,.565,1.000) both;
+}
+
+@-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
+
+.loading_gif{
+    object-fit: contain;
+    margin-left: 20px;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000be;
+    width: 80%;
+    height: auto;
+    margin: 7rem auto 2rem;
+    padding: 2rem 0;
+    border-radius: 10px;
+    box-shadow: 0 0 8px 1px yellow;
+    background-image: url('/images/majinIcon.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size:10%;
+    transition: all .5s;
+}
+@media (max-width: 785px) {
+    .container{
+        width: 90%;
+        background-size:20%;
+    }
+}
