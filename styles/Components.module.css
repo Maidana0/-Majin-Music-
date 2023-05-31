@@ -90,6 +90,7 @@
 }
 
 .list_btn {
+    cursor: pointer;
     text-align: center;
     height: 85px;
     width: 170px;
@@ -107,6 +108,11 @@
     color: rgb(255, 120, 143);
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+.playList_btn{
+    padding: 1rem;
+}
+
 @media (max-width: 785px) {
     .container {
         width: 85%;

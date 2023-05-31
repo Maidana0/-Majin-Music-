@@ -4,8 +4,8 @@ const PlayList = ({ url }) => {
     return (
         <iframe
             className={styles.iframe}
-            src={url}
-            allowfullscreen=""
+            src={`https://open.spotify.com/embed/playlist/${url}?utm_source=generator`}
+            allowFullScreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"
         />
