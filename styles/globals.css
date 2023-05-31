@@ -28,7 +28,7 @@ li {
 }
 
 main {
-  min-height: 80vh;
+  min-height: 85vh;
   margin-top: 4rem;
 }
 
@@ -89,4 +89,7 @@ nav {
 #nprogress .peg {
   /* box-shadow: 0 0 10px yellow, 0 0 5px yellow; */
   box-shadow: none;
+}
+iframe{
+  border: none;
 }
